@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.holy-grail {
+	min-height: 100vh;
+}
+
+.holy-grail,
+.holy-grail-body {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	background-color:#2A1C39;
+}
+
+.holy-grail-content {
+	flex: 1 1 auto;
+}
+
+.holy-grail-sidebar-1 {
+	order: -1;
+}
+
+@media (min-width: 768px)
+{
+	.holy-grail-body
+	{
+		flex-direction: row;
+	}
+
+	.hg-sidebar
+	{
+		flex: 0 0 260px;
+	}
+}
+
+header
+{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 120px;
+	background-color:#150E1E;
+}
+
+body
+{
+	display: flex;
+	align-items: center;
+	color:#D3C3EC;
+	margin: 0;
+}
+</style>
+</head>
+<body class="holy-grail">
+	<header>
+		<img src="logo.png" width="640" height="99" style="margin: 0 auto;">
+	</header>
+
+	<div class="holy-grail-body">
+
+		<section class="holy-grail-content">
+			<iframe width="640" height="360" src="https://www.youtube.com/embed/56APLzSYnHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<h3>A stylish hack and slash game about an immigrant girl fighting with parasites and feeling tired. Play Anna, finding a job and moving to a new country. Explore her new life, struggles, loneliness, relationships, language barrier.</h3>
+			<h3>Coming to Steam and Switch.</h3>
+			<div class=“konteyner”>
+				<img src="steam.png"width="128" height="128">
+				<img src="switch.png"width="128" height="128">
+				<img src="kayabros.png"width="128" height="128">
+			</div>
+		</section>
+
+		<div class="holy-grail-sidebar-1 hg-sidebar">
+		</div>
+
+		<div class="holy-grail-sidebar-2 hg-sidebar">
+		</div>
+
+	</div>
+
+	<footer>
+		<img src="twitter.png"width="48" height="48">
+	</footer>
+</body>
+</html>
+
