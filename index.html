@@ -2,86 +2,122 @@
 <html>
 <head>
 <style>
-.holy-grail {
-	min-height: 100vh;
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.holy-grail,
-.holy-grail-body {
-	display: flex;
-	flex: 1 1 auto;
-	flex-direction: column;
-	background-color:#2A1C39;
+a:link, a:visited {
+  color: #D3C3EC;
 }
 
-.holy-grail-content {
-	flex: 1 1 auto;
+a:hover, a:active {
+  color: white;
 }
 
-.holy-grail-sidebar-1 {
-	order: -1;
+body {
+  margin: 0;
+  color: #D3C3EC;
+  font-family: sans-serif;
 }
 
-@media (min-width: 768px)
-{
-	.holy-grail-body
-	{
-		flex-direction: row;
-	}
-
-	.hg-sidebar
-	{
-		flex: 0 0 260px;
-	}
+.responsive-img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-header
-{
-	display: flex;
-	align-items: center;
-	width: 100%;
-	height: 120px;
-	background-color:#150E1E;
+header {
+  padding: 20px 20px;
+  background: #150E1E;
 }
 
-body
-{
-	display: flex;
-	align-items: center;
-	color:#D3C3EC;
-	margin: 0;
+.content {
+  padding: 40px 20px;
+  background: #2A1C39;
+}
+
+footer {
+  padding: 20px 20px;
+  background: #150E1E;
+}
+
+.social-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links li img {
+  display: block;
+}
+
+h2 {
+  font-weight: lighter;
 }
 </style>
 </head>
-<body class="holy-grail">
-	<header>
-		<img src="logo.png" width="640" height="99" style="margin: 0 auto;">
-	</header>
-
-	<div class="holy-grail-body">
-
-		<section class="holy-grail-content">
-			<iframe width="640" height="360" src="https://www.youtube.com/embed/56APLzSYnHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<h3>A stylish hack and slash game about an immigrant girl fighting with parasites and feeling tired. Play Anna, finding a job and moving to a new country. Explore her new life, struggles, loneliness, relationships, language barrier.</h3>
-			<h3>Coming to Steam and Switch.</h3>
-			<div class=“konteyner”>
-				<img src="steam.png"width="128" height="128">
-				<img src="switch.png"width="128" height="128">
-				<img src="kayabros.png"width="128" height="128">
+	<body class="holy-grail">
+		<header>
+			<div class="container">
+				<img src="logo.png" class="responsive-img"  width="640" height="99" alt="">
 			</div>
-		</section>
-
-		<div class="holy-grail-sidebar-1 hg-sidebar">
+		</header>
+		<div class="content">
+			<div class="container">
+				<iframe width="800" height="450" src="https://www.youtube.com/embed/56APLzSYnHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h2>A stylish hack and slash game about an immigrant girl fighting with parasites and feeling tired. Play Anna, finding a job and moving to a new country. Explore her new life, struggles, loneliness, relationships, language barrier.</h2>
+				<h2>Coming to <a href="https://store.steampowered.com/app/1765560/Pill_Baby/">Steam</a> and Switch.</h2>
+				<div class="container">
+					<ul class="social-links">
+						<li><a><iframe src="https://store.steampowered.com/widget/1765560/?t=A%20stylish%20hack%20and%20slash%20game%20about%20an%20immigrant%20girl%20fighting%20with%20parasites%20and%20feeling%20tired.%20Play%20Anna%2C%20finding%20a%20job%20and%20moving%20to%20a%20new%20country.%20Explore%20her%20new%20life%2C%20struggles%2C%20loneliness%2C%20relationships%2C%20language%20barrier." frameborder="0" width="585" height="190"></iframe></a></li>
+						<li><a><img src="switch.png" width="190" height="190"></a></li>
+					</ul>
+				</div>
+				<h1></h1>
+				<img src="ss01.jpg" alt="" width="800" height="450">
+				<h1>Deep Action Mechanics</h1>
+				<ul>
+					<li><h2>Wide movement set/ Combo-based action where you can learn lots of different attacks, and use them strategically.</h2></li>
+					<li><h2>Helpful drone units with special move that help you on offense or defense.</h2></li>
+					<li><h2>Custom gloves for special effects such as freezing or poisoning parasites.</h2></li>
+					<li><h2>Upgrades that help you focus on fights, collecting coins automatically, or absorbing parasite projectiles by dashing.</h2></li>
+					<li><h2>Epic boss fights: Fight with parasites 10 times your size.</h2></li>
+				</ul>
+				<img src="ss04.jpg" alt="" width="800" height="450">
+				<h1>Story</h1>
+				<ul>
+					<li><h2>Play as Anna, finding a job and moving to a new country.</h2></li>
+					<li><h2>Stress, loneliness and alienation. Can she survive here?</h2></li>
+					<li><h2>See the small town she moved to and interact with her new friends and neighbors. Form all kinds of relationships.</h2></li>
+					<li><h2>Sinister and mysterious things are going on in this town.</h2></li>
+				</ul>
+				<img src="ss15.jpg" alt="" width="800" height="450">
+				<h1>Team</h1>
+				<ul>
+					<li><h2>Talha Kaya: Design and code</h2></li>
+					<li><h2>Şeyma Hatip: Art</h2></li>
+					<li><h2>Antifon Audio: Sound</h2></li>
+					<li><h2>Selin Çınar: Poster</h2></li>
+					<li><h2>Radio for the Daydreamers, Midnight Moodswings, Tensor, Danny Brown, Seiswork: Music</h2></li>
+				</ul>
+			</div>
 		</div>
-
-		<div class="holy-grail-sidebar-2 hg-sidebar">
-		</div>
-
-	</div>
-
-	<footer>
-		<img src="twitter.png"width="48" height="48">
-	</footer>
-</body>
+		<footer>
+			<div class="container">
+				<h1>Say hi!</h1>
+				<ul class="social-links">
+					<li><a href="http://kayabros.com"><img src="kayabros.png" alt="" width="64" height="64"></a></li>
+					<li><a href="https://twitter.com/kayabros"><img src="twitter.png" alt="" width="64" height="64"></a></li>
+				</ul>
+			</div>
+		</footer>
+	</body>
 </html>
 
